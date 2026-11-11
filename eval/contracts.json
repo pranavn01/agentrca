@@ -1,0 +1,621 @@
+{
+  "workflow": "whoandwhen",
+  "contracts": [
+    {
+      "name": "AcademicPublication_Expert",
+      "contract": "The agent must produce the title of the first paper authored by the author of 'Pie Menus or Linear Menus, Which Is Better?' (2015) who had prior publications before 2015, verifiable against academic publication records."
+    },
+    {
+      "name": "AlgorithmDesign_Expert",
+      "contract": "The AlgorithmDesign_Expert agent is responsible for producing a clearly structured algorithm or corrected code solution—including step-by-step logic and executable code—that directly solves the assigned computational or analytical task as specified by the manager's instructions."
+    },
+    {
+      "name": "Ali_Khan_Shows_and_New_Mexican_Cuisine_Expert",
+      "contract": "The agent must produce the complete title of the book (with any numbers written out as words) in which two James Beard Award winners recommended the restaurant where Ali Khan enjoyed a New Mexican staple on his 2015 cost-conscious TV show."
+    },
+    {
+      "name": "AquaticEcosystems_InvasiveSpecies_Expert",
+      "contract": "The agent must produce a comma-separated list of five-digit zip codes identifying all locations where the Finding Nemo fish species (Amphiprion ocellaris) was recorded as a nonnative species in the USGS Nonindigenous Aquatic Species database before the year 2020, verifiable against that database."
+    },
+    {
+      "name": "ArtHistory_Expert",
+      "contract": "The agent is responsible for producing a single integer representing how many of the twelve animals of the Chinese zodiac have a hand visible in the 2015 Metropolitan Museum of Art exhibition titled after the Chinese zodiac animal of 2015, based on verified research of that specific exhibition."
+    },
+    {
+      "name": "Art_Expert",
+      "contract": "The Art_Expert agent must produce a specific, verifiable finding—such as a title, reference, or artwork identification—that directly answers the assigned research question by following a structured multi-step plan involving academic repositories and art collections."
+    },
+    {
+      "name": "Art_Historian_Expert",
+      "contract": "The Art Historian Expert agent must produce the identity of the subject depicted in the Metropolitan Museum of Art portrait with accession number 29.100.5, supported by verifiable details from the museum's collection record."
+    },
+    {
+      "name": "Assistant",
+      "contract": "The agent is responsible for producing a complete, actionable response to the user's request, which may include a step-by-step plan, executable code, web search findings, or direct guidance sufficient for an independent reviewer to verify that the output addresses the stated task."
+    },
+    {
+      "name": "Baseball_Expert",
+      "contract": "The Baseball_Expert agent is responsible for producing the last names (in Roman characters) of the pitchers whose jersey numbers immediately precede and follow Taishō Tamai's jersey number as of July 2023, in the format 'Pitcher Before, Pitcher After'."
+    },
+    {
+      "name": "Behavioral_Expert",
+      "contract": "The Behavioral_Expert agent is responsible for producing a logically reasoned conclusion about the number of vampires among residents by systematically analyzing each scenario against the defined truth-telling and lying behaviors of humans and vampires, such that an independent reviewer could verify the conclusion follows necessarily from the behavioral rules and the residents' statements."
+    },
+    {
+      "name": "BenAndJerrysFlavors_Expert",
+      "contract": "The agent must produce accurate, verifiable information about Ben & Jerry's ice cream flavors, including current, discontinued, and Flavor Graveyard entries, with specific details such as flavor names, descriptions, rhymes, or other flavor-related facts that an independent reviewer could confirm against official Ben & Jerry's sources."
+    },
+    {
+      "name": "BiblicalScholar_Expert",
+      "contract": "The agent must identify the first named place in the Book of Esther (New International Version) and clearly state that place name so an independent reviewer can verify it against the NIV text."
+    },
+    {
+      "name": "Bioinformatics_Expert",
+      "contract": "The Bioinformatics_Expert agent is responsible for producing a structured report that identifies and summarizes the relevant genomic files, databases, or assemblies for a given organism and time period, including the steps taken and any code or queries used to locate them, such that a reviewer can verify the accuracy of the biological background, the correctness of the search methodology, and the relevance of the identified resources."
+    },
+    {
+      "name": "Boggle_Board_Expert",
+      "contract": "The agent must produce the single longest valid English word (or the alphabetically first among ties) that can be traced on the given Boggle board using the words_alpha dictionary, verified by a correct DFS path-finding implementation."
+    },
+    {
+      "name": "Budgeting_Expert",
+      "contract": "The Budgeting_Expert agent is responsible for producing a step-by-step cost comparison that calculates and clearly states the total expenditure for each ticketing option along with the net savings or loss, such that a reviewer can verify every arithmetic operation and confirm the final recommendation is consistent with the computed figures."
+    },
+    {
+      "name": "BusinessLogic_Expert",
+      "contract": "The BusinessLogic_Expert agent must produce a verified, step-by-step analysis and corresponding executable code that correctly applies specified business rules to a dataset, such that an independent reviewer can confirm the logic, code, and derived output all align with the stated requirements."
+    },
+    {
+      "name": "CelestialPhysics_Expert",
+      "contract": "The agent is responsible for producing a verified numerical answer (in hours, rounded to the nearest 1000) for how long it would take to run the Earth-Moon minimum perigee distance at Eliud Kipchoge's marathon pace, including clearly shown intermediate calculations for distance, pace conversion, and final time computation."
+    },
+    {
+      "name": "ChessRules_Expert",
+      "contract": "The agent must produce a clear description of the chess position from a given image, including the placement of pieces on the board and which side is to move, such that an independent reviewer could verify its accuracy against the image."
+    },
+    {
+      "name": "Chess_Expert",
+      "contract": "The Chess_Expert agent must produce the single best next move for black in standard algebraic notation that guarantees a win, based on analysis of the provided chess position image."
+    },
+    {
+      "name": "Chinese_Zodiac_Expert",
+      "contract": "The agent must correctly identify the Chinese zodiac animal for a given year and provide accurate, sourced details about any related exhibitions or artifacts (e.g., a specified Metropolitan Museum of Art exhibition), such that an independent reviewer can verify the zodiac animal assignment and the factual claims about the exhibition against authoritative sources."
+    },
+    {
+      "name": "Church_Historian_Expert",
+      "contract": "The Church Historian Expert agent is responsible for producing verified identifying information (title, artist, date, and subject) about a specific artwork in the Metropolitan Museum of Art's collection by researching it via web search or direct API/database access, such that an independent reviewer could confirm the details match the museum's official records for the given accession number."
+    },
+    {
+      "name": "ComputerTerminal",
+      "contract": "The ComputerTerminal agent is responsible for executing code blocks in a sandboxed environment and returning the resulting standard output, exit code, and any runtime messages to the workflow."
+    },
+    {
+      "name": "Computer_terminal",
+      "contract": "The Computer_terminal agent is responsible for producing the execution result of code runs, including the exit code, any code output or error tracebacks, and any web search results retrieved during execution."
+    },
+    {
+      "name": "CorporateHistory_IPOs_MondayCom_Expert",
+      "contract": "The agent must produce a list of current monday.com C-suite members who did not hold a C-suite position at the time of the company's IPO on June 10, 2021, supported by a comparison of current and IPO-era C-suite rosters."
+    },
+    {
+      "name": "Corporate_Governance_Expert",
+      "contract": "The Corporate_Governance_Expert agent is responsible for producing a named identification of the Apple Board of Directors member who did not hold a C-suite position at their company at the time they joined the board, supported by a brief summary of each candidate's professional title history that an independent reviewer could verify against public biographical records."
+    },
+    {
+      "name": "Culinary_Awards_Expert",
+      "contract": "The Culinary_Awards_Expert agent is responsible for producing an identified book title in which two James Beard Award winners recommend the Frontier Restaurant in Albuquerque, supported by web search evidence linking the specific publication to those award-winning authors."
+    },
+    {
+      "name": "DOI_Expert",
+      "contract": "The DOI_Expert agent is responsible for retrieving the specific endnote from the second-to-last paragraph of page 11 of the book identified by DOI 10.2307/j.ctv9b2xdv and extracting the exact day in November when the Wikipedia article was accessed, expressed as a single numeric day of the month."
+    },
+    {
+      "name": "DataAnalysis_Expert",
+      "contract": "The DataAnalysis_Expert agent is responsible for producing a quantitative finding derived from data analysis—such as identifying a specific record, value, or result—that directly answers the assigned analytical question using code or structured examination of the provided dataset."
+    },
+    {
+      "name": "DataCollection_Expert",
+      "contract": "The DataCollection_Expert is responsible for producing a verified list of Yellowstone hikes that meet specified criteria, including each hike's name, average TripAdvisor rating, and number of TripAdvisor reviews, gathered through web searches and cross-referenced against family recommendations."
+    },
+    {
+      "name": "DataExtraction_Expert",
+      "contract": "The DataExtraction_Expert agent must produce structured, extracted data from the provided document, including the list of employees, their assigned recipients, and their interests, organized in a format suitable for identifying who did not give a gift."
+    },
+    {
+      "name": "DataManipulation_Expert",
+      "contract": "The DataManipulation_Expert agent must produce a verified, correctly filtered analytical result (e.g., a specific statistic such as minimum sale price) derived from a structured dataset using code-based data manipulation, along with the step-by-step logic and any data access issues encountered."
+    },
+    {
+      "name": "DataValidation_Expert",
+      "contract": "The DataValidation_Expert agent must produce validated, corrected, and executable code along with clear step-by-step instructions ensuring all required data files and dependencies are properly in place before code execution, verifiable by confirming that the provided code runs without errors and the setup instructions are complete and accurate."
+    },
+    {
+      "name": "DataVerification_Expert",
+      "contract": "The DataVerification_Expert agent is responsible for producing a verified, filtered list of eateries near a specified location that meet defined operating hour criteria (open until at least 11 PM on Wednesdays), confirmed through systematic querying and cross-checking of search results, such that an independent reviewer could validate each included eatery's Wednesday closing time and proximity to the target location."
+    },
+    {
+      "name": "Data_Analysis_Expert",
+      "contract": "The Data_Analysis_Expert must produce a verified, accurate numerical answer identifying which of the queried properties sold for more and stating its exact sale price, based on data gathered by other agents in the workflow."
+    },
+    {
+      "name": "Data_Extraction_Expert",
+      "contract": "The agent must produce a single integer representing the count of High Energy Physics - Lattice articles listed in January 2020 on Arxiv that had ps versions available, verifiable against Arxiv's records for that category and time period."
+    },
+    {
+      "name": "Data_Retrieval_Expert",
+      "contract": "The Data_Retrieval_Expert agent is responsible for producing retrieved and scraped source data (e.g., web-scraped tables or structured records) from specified URLs or data sources, such that a reviewer can verify the correct data was fetched from the correct location in a usable format."
+    },
+    {
+      "name": "Database_Expert",
+      "contract": "The Database_Expert must produce the scheduled arrival time retrieved from the train schedule database for a specified train ID, station, and date, verifiable by checking that the output matches the corresponding record in the train_schedule.csv data source."
+    },
+    {
+      "name": "DebuggingOptimization_Expert",
+      "contract": "The agent must produce a specific, actionable debugging or optimization output—such as a corrected code segment, diagnostic template, or identified root cause—that directly addresses the error or inefficiency described in the user's request and can be independently verified as executable and relevant to the reported problem."
+    },
+    {
+      "name": "DebuggingTesting_Expert",
+      "contract": "The DebuggingTesting_Expert agent is responsible for producing a diagnosis of code failures and a proposed resolution, given the provided source code and error details, such that a reviewer can verify the identified root cause and suggested fix directly address the reported issue."
+    },
+    {
+      "name": "Debugging_Expert",
+      "contract": "The Debugging_Expert agent must produce a root-cause analysis of a reported error and a verified, corrected code solution that resolves the identified bug, such that an independent reviewer can confirm the fix directly addresses the stated error and the provided code runs without the original failure."
+    },
+    {
+      "name": "Debugging_Problem_Solving_Expert",
+      "contract": "The agent must produce corrected, executable code along with its successful execution result that resolves the identified error causing the exit code of 1, such that an independent reviewer can verify the code runs without errors and produces the expected output."
+    },
+    {
+      "name": "DemographicData_Expert",
+      "contract": "The DemographicData_Expert agent is responsible for producing the numerical difference (in thousands) between the larger and smaller gender count of tertiary-educated individuals from the 2011 Bulgarian census, expressed as a single decimal-precision number (e.g., '30.1'), verifiable against official 2011 Bulgarian census data on educational attainment by gender."
+    },
+    {
+      "name": "Dictionary_Expert",
+      "contract": "The Dictionary_Expert agent must produce a loaded set of valid English words sourced from the `words_alpha` dictionary that can be used to validate words in the workflow."
+    },
+    {
+      "name": "DoctorWhoScript_Expert",
+      "contract": "The DoctorWhoScript_Expert agent is responsible for producing the exact text of the first scene heading location from the official script of Doctor Who Series 9, Episode 11, formatted precisely as it appears in that script."
+    },
+    {
+      "name": "Eateries_Expert",
+      "contract": "The Eateries_Expert agent must produce the name, address, distance from Harkness Memorial State Park, and Wednesday operating hours of the single closest eatery to the park that is confirmed open at 11pm on Wednesdays."
+    },
+    {
+      "name": "Environment_Expert",
+      "contract": "The Environment_Expert agent is responsible for producing a detailed analysis of environment-related errors (such as missing files, incorrect paths, or permission issues) along with concrete diagnostic steps, updated scripts or commands, and a clear resolution plan that an independent reviewer can verify resolved the identified issue."
+    },
+    {
+      "name": "Excel_Expert",
+      "contract": "The agent must produce a correct, specific answer derived from analyzing the provided Excel file(s) according to the manager's plan, such that an independent reviewer can verify the answer directly against the spreadsheet data and movement/logic rules described in the task."
+    },
+    {
+      "name": "Fashion_Vogue_Expert",
+      "contract": "The Fashion_Vogue_Expert agent is responsible for correctly identifying the famous landmark visible in the background of the August 2021 Vogue cover image."
+    },
+    {
+      "name": "Federico_Lauria_Expert",
+      "contract": "The agent must produce the absolute difference between the chapter numbers of the two Smithsonian American Art Museum paintings whose titles quote chapters from the work cited in footnote 397 of Federico Lauria's 2014 dissertation, supported by identification of the dissertation, the referenced work, and the two painting titles."
+    },
+    {
+      "name": "FileSurfer",
+      "contract": "FileSurfer must produce a confirmation message identifying the local file path where the requested file has been successfully downloaded and saved."
+    },
+    {
+      "name": "FilmCritic_Expert",
+      "contract": "The agent must produce a verified, source-cross-referenced answer to a specific factual question about a film, clearly stating the confirmed detail and its accuracy."
+    },
+    {
+      "name": "Filmography_Expert",
+      "contract": "The Filmography_Expert agent is responsible for producing a filtered list of Isabelle Adjani feature films with runtimes under 2 hours, including their IMDB ratings and Vudu availability, culminating in the identification of the single highest-rated qualifying film with its title and IMDB rating."
+    },
+    {
+      "name": "FinancialData_Expert",
+      "contract": "The FinancialData_Expert agent is responsible for producing the first calendar year in which Apple's stock price exceeded $50, as reported by Google Finance without stock split adjustment, supported by retrieved historical data."
+    },
+    {
+      "name": "Fitness_Expert",
+      "contract": "The Fitness Expert agent is responsible for producing a verified list of gyms near a specified location that offer fitness classes before a specified time, including each gym's name, address, and confirmed early-morning class availability."
+    },
+    {
+      "name": "GIS_DataAnalysis_Expert",
+      "contract": "The agent must produce a verified list of zip codes, sourced from the USGS Nonindigenous Aquatic Species database, for locations where the specified species was recorded as nonnative within the defined time period, formatted as comma-separated values that an independent reviewer could cross-check against the USGS database records."
+    },
+    {
+      "name": "GameTheory_Expert",
+      "contract": "The GameTheory_Expert agent is responsible for producing a rigorous, step-by-step mathematical or game-theoretic analysis that identifies all valid solutions or equilibria satisfying the given constraints, with each step clearly labeled and verified against those constraints."
+    },
+    {
+      "name": "Genomics_Expert",
+      "contract": "The Genomics_Expert agent is responsible for producing a factual summary of the history and updates of the dog genome project, including key milestones and versions available as of May 2020, that an independent reviewer could verify against published genomic research records."
+    },
+    {
+      "name": "Geography_Expert",
+      "contract": "The Geography_Expert agent is responsible for producing accurate identification of geographic landmarks and their associated factual data (such as measurements and unit conversions), supported by web searches where necessary, that an independent reviewer could verify for correctness."
+    },
+    {
+      "name": "Geometry_Expert",
+      "contract": "The Geometry_Expert agent is responsible for producing a verified list of gyms (excluding gymnastics centers) within 5 miles by car of the Mothman Museum in West Virginia, including each gym's name and address, confirmed using accurate distance calculations."
+    },
+    {
+      "name": "Geospatial_Expert",
+      "contract": "The agent must produce verified geographic coordinates for all provided addresses and calculated walking distances between specified locations, identifying which location pairs fall within the defined proximity threshold."
+    },
+    {
+      "name": "GraphicDesign_Expert",
+      "contract": "The agent must identify a specific symbol with a curved line (not a circle or arc) from a designated visual source and produce a clear description and interpretation of that symbol's meaning based on visual analysis and symbolic context."
+    },
+    {
+      "name": "HawaiiRealEstate_Expert",
+      "contract": "The HawaiiRealEstate_Expert agent must produce verified 2022 sale prices for 2072 Akaikai Loop and 2017 Komo Mai Drive in Pearl City, Hawaii, and identify which property sold for more, with the sale price expressed without commas or decimal places."
+    },
+    {
+      "name": "Hiking_Expert",
+      "contract": "The Hiking_Expert agent is responsible for producing a list of hiking trails to waterfalls in Yosemite National Park that meet all specified criteria (more than 1,000 TripAdvisor reviews, wheelchair accessibility recommended by at least three reviewers, and an average rating of 4.5/5 or more), including each trail's name, review count, and average rating, verifiable by an independent reviewer against TripAdvisor data."
+    },
+    {
+      "name": "Historian_Expert",
+      "contract": "The Historian_Expert agent is responsible for producing a verified, accurate answer to a historical research question by locating relevant sources (such as Wikipedia pages or museum websites), extracting and analyzing content (including images via OCR if necessary), and clearly stating the final finding with supporting evidence."
+    },
+    {
+      "name": "HistoricalWeatherData_Expert",
+      "contract": "The HistoricalWeatherData_Expert agent is responsible for producing a verified percentage representing the likelihood of snowfall on New Year's Eve in Chicago based on accurate historical weather data from 2014 to 2023, such that an independent reviewer can confirm the figure against a reliable data source and the calculation method used."
+    },
+    {
+      "name": "IMDB_Ratings_Expert",
+      "contract": "The IMDB_Ratings_Expert agent is responsible for producing verified IMDB numerical ratings for specified films, identified by title and release year, sourced directly from IMDB."
+    },
+    {
+      "name": "ISBNCheckDigit_Expert",
+      "contract": "The agent is responsible for producing the correctly computed ISBN-10 check digit for a given Tropicos ID by applying the standard ISBN-10 weighted sum and modulo-11 algorithm, with a result that an independent reviewer can verify by replicating the same calculation."
+    },
+    {
+      "name": "ImageProcessing_Expert",
+      "contract": "The ImageProcessing_Expert agent is responsible for producing a comma-separated list (no whitespace) of all fractions using '/' as the fraction line extracted from the provided image in the order they appear, along with the solved answers to any sample problems shown in the image."
+    },
+    {
+      "name": "InformationExtraction_Expert",
+      "contract": "The agent must extract and deliver the specific piece of information requested from the source document (e.g., a date, name, or text passage), locating it precisely within the identified section (such as a specific page, paragraph, or endnote), so that a reviewer can verify the extracted value directly against the source."
+    },
+    {
+      "name": "InformationVerification_Expert",
+      "contract": "The InformationVerification_Expert agent is responsible for producing verified, accurately extracted factual information retrieved from specified sources (such as Wikipedia) using web searches and programmatic scraping, presented in a form an independent reviewer could confirm matches the source content."
+    },
+    {
+      "name": "JSON_Expert",
+      "contract": "The agent must produce a detailed analysis of the identified cause of the execution error, a proposed and implemented solution to resolve it, and a verification confirming the error no longer occurs."
+    },
+    {
+      "name": "JamesBondFilms_Expert",
+      "contract": "The JamesBondFilms_Expert agent is responsible for producing accurate, specific details about objects, scenes, and plot elements from James Bond films—in this case, identifying the color(s) of the object used by James Bond and Pussy Galore to conceal themselves at the end of Goldfinger, presented as a comma-separated alphabetical list if multiple colors apply."
+    },
+    {
+      "name": "Karting_Expert",
+      "contract": "The Karting_Expert agent is responsible for producing a verified list of paintball places in Cologne, Germany that are within a 10-minute walk from a karting track, supported by accurate geocoding and walking distance calculations."
+    },
+    {
+      "name": "Latin_American_Music_Expert",
+      "contract": "The agent must produce a verified count of studio albums published by Mercedes Sosa between 2000 and 2009 (inclusive), sourced specifically from the 2022 version of English Wikipedia, stated as a single number."
+    },
+    {
+      "name": "Library_Database_Expert",
+      "contract": "The Library_Database_Expert agent is responsible for producing the name of the country of origin for the article under DDC 633 on Bielefeld University Library's BASE (year 2020), written in an unknown language, whose associated country flag is unique compared to the flags of the other unknown-language articles in that same result set."
+    },
+    {
+      "name": "Linguistics_Expert",
+      "contract": "The Linguistics_Expert must produce a verified identification of a specific word or phrase within a song's lyrics, supported by the relevant surrounding lyric passages that confirm the identification is accurate."
+    },
+    {
+      "name": "Literature_Expert",
+      "contract": "The Literature_Expert must produce a determination of whether the quoted text in the in-line citation exactly matches the text in the referenced article, and if not, identify the specific word in the citation that differs from the correct word in the source."
+    },
+    {
+      "name": "LocalHistorian_Expert",
+      "contract": "The LocalHistorian_Expert agent is responsible for producing a verified list of gyms (excluding gymnastics centers) located within a specified distance of a given local landmark, including gym names and addresses confirmed to meet the stated proximity and exclusion criteria."
+    },
+    {
+      "name": "Local_Knowledge_Expert",
+      "contract": "The agent must produce a list of gyms located within 200 meters of Tompkins Square Park, including their names and addresses, along with details of any fitness classes starting before 7am (class type and start time), or a clear statement that no such gyms or classes exist, verifiable against publicly available gym schedules and mapping data."
+    },
+    {
+      "name": "Location-Based_Services_Expert",
+      "contract": "The Location-Based_Services_Expert agent is responsible for producing a list of eateries near a specified location that satisfy stated operating-hours criteria, verified using location-based search services."
+    },
+    {
+      "name": "LogicExpert",
+      "contract": "The LogicExpert agent must produce a logically reasoned conclusion that directly answers the investigative question posed in the task, following the manager's plan and integrating information from the general task, such that an independent reviewer can verify the answer is supported by sound logical deduction."
+    },
+    {
+      "name": "Lyrics_Expert",
+      "contract": "The Lyrics_Expert agent is responsible for producing the specific word, phrase, or lyrical element requested by analyzing song lyrics, verifiable by checking the identified output against the actual lyrics of the named song."
+    },
+    {
+      "name": "MBTA_FranciscoFoxboroLine_Expert",
+      "contract": "The agent must produce a single integer representing the number of stops between South Station and Windsor Gardens on the MBTA Franklin-Foxboro line as of May 2023, excluding both endpoint stations, supported by an accurately ordered list of stops that an independent reviewer can verify against official MBTA records."
+    },
+    {
+      "name": "Marathon_Expert",
+      "contract": "The Marathon_Expert agent is responsible for producing a verified numerical answer—expressed as a single integer number of thousand hours rounded to the nearest 1000—representing how long Eliud Kipchoge would take to run the Earth-Moon minimum perigee distance at his record marathon pace, with all intermediate calculations (pace in km/h, distance in km, total hours) explicitly shown and confirmed correct."
+    },
+    {
+      "name": "MarineBiology_Expert",
+      "contract": "The agent must produce the 2020 estimated population of Greenland (to the nearest thousand) as sourced from Wikipedia as of January 1, 2021, verifiable against that specific Wikipedia snapshot."
+    },
+    {
+      "name": "MarineLifeData_Expert",
+      "contract": "The agent is responsible for producing a verified numeric maximum length in meters for the specified marine creature (#9 from the identified video), sourced from the Monterey Bay Aquarium website."
+    },
+    {
+      "name": "MartialArts_Expert",
+      "contract": "The MartialArts_Expert agent must produce a verified list of martial arts schools within a five-minute walking distance of a specified location that offer classes within a requested time window, including each school's name, address, distance, and confirmed class schedule details."
+    },
+    {
+      "name": "MathAnalysis_Expert",
+      "contract": "The MathAnalysis_Expert agent is responsible for producing a verified numerical result derived from counting and arithmetic operations on provided musical note data, including the total note count, the count of notes on lines, and the final calculated value with step-by-step verification."
+    },
+    {
+      "name": "MenuAnalysis_Expert",
+      "contract": "The MenuAnalysis_Expert agent is responsible for producing a structured comparison of menu items retrieved from archived web pages for specified dates, clearly identifying additions, removals, or changes between the two menus in a manner that an independent reviewer can verify against the source URLs."
+    },
+    {
+      "name": "MerriamWebsterWordOfTheDay_Historian_Expert",
+      "contract": "The agent must produce the verified name of the writer quoted by Merriam-Webster for the Word of the Day on June 27, 2022, sourced through web research, such that an independent reviewer could confirm the writer's name matches the quotation attribution on the Merriam-Webster Word of the Day page for that date."
+    },
+    {
+      "name": "Mesopotamian_Number_Systems_Expert",
+      "contract": "The agent is responsible for producing the correct Arabic numeral decimal equivalent of a given Mesopotamian/Babylonian cuneiform number by identifying each symbol's value, applying the base-60 positional system, and summing the results into a single verified decimal number."
+    },
+    {
+      "name": "MiddleEasternHistory_Expert",
+      "contract": "The agent must produce an accurate, verifiable historical claim that directly answers the question posed, identifying the correct historical figure, event, or fact with supporting context such as dates and corroborating details."
+    },
+    {
+      "name": "MilitaryHistory_Expert",
+      "contract": "The MilitaryHistory_Expert agent is responsible for producing historically accurate, well-reasoned analysis or information grounded in military history relevant to the workflow's research question, in a form that an independent reviewer can verify against established historical records or sources."
+    },
+    {
+      "name": "ModelEvaluation_Interpretation_Expert",
+      "contract": "The ModelEvaluation_Interpretation_Expert must produce a determination of which axis-endpoint label word from the June 2022 arXiv AI regulation paper's three-axis figure is used to describe a type of society in the August 11, 2016 arXiv Physics and Society article, supported by the list of all extracted axis-endpoint label words and the specific passage in the 2016 article where the identified word appears."
+    },
+    {
+      "name": "MovieProp_Expert",
+      "contract": "The agent must produce a factually specific claim about the physical appearance, color, material, or other visual details of a prop used in a named film scene, phrased as a question directed at another agent for verification."
+    },
+    {
+      "name": "MusicHistorian_Expert",
+      "contract": "The MusicHistorian_Expert agent is responsible for producing verified, step-by-step historical and lyrical analysis of music artifacts—such as album discographies, single release orders, and song lyrics—culminating in a clearly stated, source-supported factual conclusion that an independent reviewer can confirm against authoritative music records."
+    },
+    {
+      "name": "MusicTheory_Expert",
+      "contract": "The MusicTheory_Expert agent must produce the note letters spelled out by the bass clef notes in the provided sheet music image, identifying each note's position (line or space) on the bass clef staff, so that a reviewer can verify the identified letters and their line/space classification against the actual image."
+    },
+    {
+      "name": "NYC_Local_Expert",
+      "contract": "The NYC_Local_Expert agent is responsible for producing a verified list of martial arts schools within a five-minute walk from the New York Stock Exchange that offer classes between 7–9 pm, including each school's name, address, and confirmed evening class schedule."
+    },
+    {
+      "name": "Narration_Expert",
+      "contract": "The agent must identify and state the specific number mentioned in the narration immediately after dinosaurs are first shown in the specified YouTube 360 VR video, citing the video title and narrator to support its conclusion."
+    },
+    {
+      "name": "NaturalLanguageProcessing_Expert",
+      "contract": "The NaturalLanguageProcessing_Expert agent is responsible for producing a clearly reasoned analytical plan and corresponding executable code that searches for, extracts, and filters relevant information from available data sources to answer the given query."
+    },
+    {
+      "name": "NumericalAlgorithms_Expert",
+      "contract": "The agent must produce a correct numerical solution to the given mathematical problem by applying an appropriate numerical algorithm (e.g., Newton's Method), including clearly defined functions, iterative steps, and a verifiable final result with the specified precision."
+    },
+    {
+      "name": "NumericalAnalysis_Expert",
+      "contract": "The NumericalAnalysis_Expert agent is responsible for producing executable code (scripts and installation commands) that extracts, processes, and numerically analyzes data from source files, such that an independent reviewer can verify the code is syntactically correct, targets the specified data source, and performs the requested analysis or extraction operation."
+    },
+    {
+      "name": "NumericalMethods_Expert",
+      "contract": "The NumericalMethods_Expert agent is responsible for producing the smallest iteration number n at which Newton's Method converges to four decimal places, along with the corresponding converged value of x_n, verified through explicit iterative computation."
+    },
+    {
+      "name": "Orchestrator",
+      "contract": "The Orchestrator must produce a clearly reasoned, step-by-step plan that assigns specific, actionable instructions to the appropriate agent at each step, progressing toward a final verified answer to the user's request."
+    },
+    {
+      "name": "Paintball_Expert",
+      "contract": "The agent must produce verified geocoded coordinates (latitude and longitude) for karting tracks and paintball venues in Cologne, Germany, excluding any locations outside the city."
+    },
+    {
+      "name": "Physics_Expert",
+      "contract": "The Physics_Expert agent must produce the correctly identified label words from the three-axis figure in the specified June 2022 arXiv AI regulation paper, and a determination of whether any of those label words are used to describe a type of society in the specified August 11, 2016 arXiv Physics and Society article, supported by references to the relevant arXiv paper IDs and figure or textual evidence."
+    },
+    {
+      "name": "Poetry_Expert",
+      "contract": "The Poetry_Expert agent is responsible for producing the specific stanza number in Audre Lorde's poem 'Father Son and Holy Ghost' that contains indented lines, verifiable by directly checking the poem's formatting."
+    },
+    {
+      "name": "PolishLanguage_Expert",
+      "contract": "The agent must produce the verified first name of the character played in 'Magda M.' by the actor who voiced Ray Barone in the Polish-language version of 'Everybody Loves Raymond', supported by step-by-step identification of the actor and their role."
+    },
+    {
+      "name": "Polish_TV_Series_Expert",
+      "contract": "The agent is responsible for producing the first name of the character played by the actor who portrayed Ray in the Polish-language version of 'Everybody Loves Raymond' in the TV series 'Magda M.', verified by accurate identification of both the actor and the character."
+    },
+    {
+      "name": "PopulationData_Expert",
+      "contract": "The agent must retrieve and report the chinstrap penguin population figures from both the Wikipedia page on penguin species populations (as of end of 2018) and the Nature.com 2020 global population assessment article, convert any breeding pair counts to individuals, and provide the absolute difference between the two figures expressed in tens of thousands."
+    },
+    {
+      "name": "ProbabilityTheory_Expert",
+      "contract": "The ProbabilityTheory_Expert agent is responsible for producing a clearly stated probability estimate derived from historical data analysis, including the supporting counts, totals, and reasoning that an independent reviewer could verify against the source data."
+    },
+    {
+      "name": "Probability_Expert",
+      "contract": "The Probability_Expert must produce a statistically justified determination of the ball or choice that maximizes the probability of a desired outcome, supported by simulation or mathematical reasoning that an independent reviewer can verify against the stated game mechanics."
+    },
+    {
+      "name": "ProblemSolving_Expert",
+      "contract": "The ProblemSolving_Expert agent is responsible for producing a verified, clearly reasoned solution to the given problem, including any necessary calculations, simplifications, or code, such that an independent reviewer can confirm the correctness and completeness of the final answer."
+    },
+    {
+      "name": "PublicationAnalysis_Expert",
+      "contract": "The PublicationAnalysis_Expert agent is responsible for producing verified findings about the authorship and publication histories of academic papers, including identifying authors of a specified paper and determining the earliest publication in an identified author's record, supported by searches of academic databases such as Google Scholar and arXiv."
+    },
+    {
+      "name": "PublicationData_Expert",
+      "contract": "The PublicationData_Expert agent is responsible for producing a numerically reasoned calculation—including clearly stated assumptions, step-by-step arithmetic or code, and a final rounded integer result—that estimates the number of statistically incorrect papers based on publication counts and a given false positive rate."
+    },
+    {
+      "name": "PythonDebugging_Expert",
+      "contract": "The PythonDebugging_Expert agent is responsible for producing a detailed analysis of the identified code error, the steps taken to fix it, and verified confirmation that the corrected code executes successfully with the expected output."
+    },
+    {
+      "name": "PythonProgramming_Expert",
+      "contract": "The agent must execute the provided Python script against the given array of strings to extract a URL, fetch the C++ source code from that URL, compile and run it against the array [35, 12, 8, 99, 21, 5], and return the sum of the third and fifth integers in the sorted list."
+    },
+    {
+      "name": "Python_Expert",
+      "contract": "The Python_Expert agent is responsible for producing a single floating-point number, rounded to three decimal places, representing the average of the standard population deviation of the red numbers and the standard sample deviation of the green numbers extracted from the specified image, calculated using Python 3.11's statistics module."
+    },
+    {
+      "name": "Python_Programmer_Expert",
+      "contract": "The agent is responsible for producing correct, executable Python code that solves the specified programming task, along with a clear explanation of the logic and expected output so a reviewer can verify both the code's correctness and its results."
+    },
+    {
+      "name": "Python_ScikitLearn_StatisticalAnalysis_Expert",
+      "contract": "The agent must produce the name of the predictor base command that received a bug fix in the Scikit-Learn July 2017 changelog, verifiable against that changelog."
+    },
+    {
+      "name": "Quotation_Specialist",
+      "contract": "The Quotation Specialist is responsible for producing the name of the writer quoted by Merriam-Webster for a given Word of the Day, verifiable against the corresponding Merriam-Webster Word of the Day page."
+    },
+    {
+      "name": "RealEstateMarket_Expert",
+      "contract": "The RealEstateMarket_Expert agent must produce a verification summary confirming whether a real estate dataset is valid and representative and whether the tested function correctly identifies the target property (e.g., smallest house) meeting all specified criteria (beds, baths, location, date range, square footage)."
+    },
+    {
+      "name": "RealEstate_Expert",
+      "contract": "The RealEstate_Expert must produce a confirmed, evidence-based conclusion about a real estate query, explicitly stating the verified finding and identifying the source(s) used to support it."
+    },
+    {
+      "name": "ResearchFunding_Expert",
+      "contract": "The agent is responsible for producing the specific NASA award number associated with R. G. Arendt as found in the acknowledgments or funding section of the identified scientific paper."
+    },
+    {
+      "name": "Research_Expert",
+      "contract": "The Research_Expert agent is responsible for producing a verified comparison between a provided in-line citation and the original source text retrieved from an authoritative database, clearly indicating whether the quoted text accurately matches the original."
+    },
+    {
+      "name": "Reviews_Expert",
+      "contract": "The Reviews_Expert agent is responsible for producing a validated list of locations or items that meet specified review-based criteria (minimum review count, average rating threshold, and qualitative mentions within reviews), supported by the sources, data points, and analysis steps used to verify each criterion."
+    },
+    {
+      "name": "ScientificPaperAnalysis_Expert",
+      "contract": "The agent must extract and report the verified volume in m^3 of the fish bag as calculated in the University of Leicester paper 'Can Hiccup Supply Enough Fish to Maintain a Dragon's Diet?', including the supporting data, assumptions, and step-by-step calculation used to arrive at that value."
+    },
+    {
+      "name": "Scientific_Verification_Expert",
+      "contract": "The Scientific_Verification_Expert must produce a confirmed, step-by-step verification of findings against the specified source data, resulting in a clearly stated final output that an independent reviewer can validate for completeness and accuracy."
+    },
+    {
+      "name": "SportsHistorian_Expert",
+      "contract": "The agent must produce historically accurate, verifiable sports facts and figures—such as player jersey numbers, profiles, and related biographical data—sourced from authoritative references, that an independent reviewer could confirm against those cited sources."
+    },
+    {
+      "name": "StatisticalAnalysis_Expert",
+      "contract": "The agent must produce the exact count of nonindigenous crocodiles found in Florida from 2000 through 2020, derived from the USGS Nonindigenous Aquatic Species database, such that an independent reviewer could verify the number by querying the same dataset with the same filters."
+    },
+    {
+      "name": "Statistics_Expert",
+      "contract": "The agent must produce verified statistical data (e.g., population figures) for the requested subject and time period, supported by reproducible code and a clearly identified source."
+    },
+    {
+      "name": "StreamingAvailability_Expert",
+      "contract": "The StreamingAvailability_Expert agent is responsible for producing a verified availability status for each specified film on a given streaming/rental platform (e.g., Vudu), clearly indicating for each title whether it is available to buy or rent, and passing only the available titles to the next agent."
+    },
+    {
+      "name": "TheoreticalChemistry_Expert",
+      "contract": "The TheoreticalChemistry_Expert agent is responsible for producing a reasoned analysis or conclusion—such as probability assessments or verification of simulation results—that an independent reviewer can check for logical consistency with the described game mechanics and any provided data."
+    },
+    {
+      "name": "Tickets_Pricing_Expert",
+      "contract": "The Tickets_Pricing_Expert agent is responsible for producing accurate, itemized pricing data (daily ticket prices and annual pass prices by age category) for the specified venue and calculating the total costs and savings for the described family scenario across the given number of visits."
+    },
+    {
+      "name": "TizinGrammar_Expert",
+      "contract": "The agent must produce a grammatically correct Tizin translation of the given English sentence by applying the correct Tizin word order (Verb-Object-Subject) and selecting the appropriate verb form, noun case, and pronoun case as defined in the Tizin language rules provided."
+    },
+    {
+      "name": "Tizin_Translation_Expert",
+      "contract": "The Tizin Translation Expert must produce a grammatically correct translation of the given sentence into the Tizin language, with a step-by-step explanation verifying that the sentence structure, verb forms, and case forms conform to Tizin language rules."
+    },
+    {
+      "name": "UnitTesting_Expert",
+      "contract": "The agent is responsible for producing executable unit test code with comprehensive test cases (including edge cases) that verify the correctness of a given function, along with a clear explanation of the tests being performed."
+    },
+    {
+      "name": "VSCode_Expert",
+      "contract": "The VSCode_Expert agent is responsible for producing the exact command that was clicked on in the last video of the 2018 VSCode blog post on replit.com to remove extra lines, accurately identified from that specific video."
+    },
+    {
+      "name": "Validation_Expert",
+      "contract": "The Validation_Expert agent must produce a verified conclusion identifying which property sold for a higher price and stating that price as a plain integer without commas or decimal places, confirmed through an explicit comparison of the formatted sale prices for all provided addresses."
+    },
+    {
+      "name": "VerificationExpert",
+      "contract": "The VerificationExpert must produce a clear confirmation or correction of another agent's output, explicitly stating whether the result is accurate and identifying any specific discrepancies found, in a form that an independent reviewer can check against the original sources or reasoning provided."
+    },
+    {
+      "name": "Verification_Expert",
+      "contract": "The Verification_Expert must produce a step-by-step confirmation or refutation of a prior agent's output, identifying any errors and either validating the result as correct or specifying the corrective actions needed, such that a reviewer can independently check whether each verification step is logically sound and the final conclusion is explicitly stated."
+    },
+    {
+      "name": "VideoAnalysis_Expert",
+      "contract": "The VideoAnalysis_Expert agent is responsible for producing a verified, specific visual or scene detail from a video or episode by cross-referencing script information with direct knowledge of the episode's content."
+    },
+    {
+      "name": "VideoContentAnalysis_Expert",
+      "contract": "The agent is responsible for producing an accurate transcription of Teal'c's exact spoken response to the question 'Isn't that hot?' from the specified YouTube video, including the relevant timestamp, verifiable against the video's audio content."
+    },
+    {
+      "name": "Video_Analyst_Expert",
+      "contract": "The Video_Analyst_Expert agent is responsible for producing the specific number mentioned by the narrator immediately after dinosaurs are first shown in the identified March 2018 YouTube 360 VR video narrated by the voice actor of Gollum, verified against the video's audio or captions."
+    },
+    {
+      "name": "WaybackMachine_Expert",
+      "contract": "The agent must retrieve archived dinner menus for Virtue restaurant & bar in Chicago from the Wayback Machine for both March 22, 2021 and April 21, 2021, compare the main course listings, and identify in singular form without articles the main course present on March 22 but absent on April 21."
+    },
+    {
+      "name": "WeatherData_Expert",
+      "contract": "The WeatherData_Expert agent is responsible for producing a verified percentage value representing the likelihood of maximum daily temperatures exceeding 95°F in Houston, Texas during June, based on accurate historical weather data from 2020 to 2023, expressed as a single numeric percentage that an independent reviewer can confirm against the underlying daily temperature records."
+    },
+    {
+      "name": "WebDevelopment_Expert",
+      "contract": "The agent must produce working code and a clear navigation plan that locates, accesses, and retrieves the requested information from specified web sources using search queries and web tools."
+    },
+    {
+      "name": "WebServing_Expert",
+      "contract": "The WebServing_Expert agent is responsible for producing the NASA award number under which R. G. Arendt's work was supported, as found in the acknowledgments or funding section of the paper linked at the bottom of Carolyn Collins Petersen's June 6, 2023 Universe Today article."
+    },
+    {
+      "name": "WebSurfer",
+      "contract": "The WebSurfer agent is responsible for producing the content retrieved from web pages visited during a browsing session, including search results, page metadata, and OCR-extracted text, sufficient for an independent reviewer to verify that the correct pages were accessed and their relevant content was captured."
+    },
+    {
+      "name": "Web_Design_Expert",
+      "contract": "The Web_Design_Expert agent must produce the meaning of the specific symbol in Eva Draconis's personal website top banner that contains a curved line which is neither a circle nor a portion of a circle, stated clearly and without punctuation."
+    },
+    {
+      "name": "Whitney_Collection_Expert",
+      "contract": "The Whitney_Collection_Expert agent is responsible for producing the name of the military unit joined in 1813 by the author of the book depicted in the Whitney Museum of American Art photograph with accession number 2022.128, stated without articles and verified as accurate."
+    },
+    {
+      "name": "WikipediaHistory_Expert",
+      "contract": "The WikipediaHistory_Expert agent must produce the verified name of the person who nominated the only Featured Article about a dinosaur promoted on English Wikipedia in November 2016, along with relevant details about the nomination process sourced from Wikipedia's Featured Article logs and nomination pages."
+    },
+    {
+      "name": "Wikipedia_Editor_Expert",
+      "contract": "The Wikipedia_Editor_Expert agent is responsible for producing a verified identification of a specific Wikipedia article's nominator, promotion status, or editorial history detail by researching Featured Article logs, nomination discussion pages, and related Wikipedia records."
+    },
+    {
+      "name": "WomenInComputerScienceHistory_Expert",
+      "contract": "The agent must produce the number of years it took for the percentage of women computer scientists to drop by 13% from 37%, as reported by Girls Who Code, supported by identification of the start and end years used in the calculation."
+    }
+  ]
+}
